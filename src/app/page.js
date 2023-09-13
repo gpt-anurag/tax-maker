@@ -1,7 +1,7 @@
-import Contact from './_components/Contact'
-import Header from './_components/Header'
-import Services from './_components/Services'
-import AboutSection from './_components/AboutSection'
+import Contact from './components/Contact'
+import Header from './components/Header'
+import Services from './components/Services'
+import AboutSection from './components/AboutSection'
 
 export default function Home() {
   return (
