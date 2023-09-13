@@ -30,7 +30,7 @@ const Services = () => {
                   <p className='hover:border-b-2 mb-2'>
                     <Link href='/pan#faq'>FAQ</Link>
                   </p>
-                  <button className='my-2 rounded-md bg-neutral-600 p-2 text-lg hover:bg-neutral-700'>
+                  <button className='my-2 mt-7 rounded-md bg-neutral-200 p-2 text-lg hover:bg-neutral-700 hover:text-neutral-200 text-neutral-700 duration-300'>
                     Apply
                   </button>
                 </div>
