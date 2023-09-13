@@ -1,14 +1,14 @@
 import CustomButton from './CustomButton'
 import SectionContainer from './SectionContainer'
 
-const AboutSection = () => {
+const AboutSection = ({ title, id }) => {
   return (
-    <section className='border-t border-gray-300/50'>
+    <section className='border-t border-gray-300/50' id={id}>
       <SectionContainer>
         <div className='flex justify-between items-center gap-10 py-10'>
           <div className='basis-5/12'>
             <h2 className='text-FontDark text-5xl font-semibold mb-8'>
-              Why our <br /> consulting?
+              {title}
             </h2>
             <p className='text-primaryFont'>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita

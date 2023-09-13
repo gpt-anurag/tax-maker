@@ -5,11 +5,11 @@ import AboutSection from './components/AboutSection'
 
 export default function Home() {
   return (
-    <div>
+    <div className='text-white'>
       <Contact />
       <Header />
       <Services />
-      <AboutSection />
+      <AboutSection title={`Why our consulting?`} />
     </div>
   )
 }

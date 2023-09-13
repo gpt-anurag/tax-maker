@@ -5,7 +5,7 @@ import { GrFacebookOption } from 'react-icons/gr'
 
 const Contact = () => {
   return (
-    <section className='bg-primary100'>
+    <section className='bg-primary100 text-white'>
       <SectionContainer>
         <div className='flex justify-between py-2'>
           <p className=''>New York City Financial Advisor</p>
