@@ -1,11 +1,19 @@
+'use client'
+
 import SectionContainer from './SectionContainer'
 import { FaPhone, FaLinkedinIn, FaTwitter } from 'react-icons/fa'
 import { HiMail } from 'react-icons/hi'
 import { GrFacebookOption } from 'react-icons/gr'
+import { usePathname } from 'next/navigation'
 
 const Contact = () => {
+  const pathname = usePathname()
   return (
-    <section className='bg-primary100 text-white'>
+    <section
+      className={`bg-primary100 text-white top-0 w-full hidden text-sm md:block lg:text-base ${
+        pathname !== '/' && 'sticky'
+      }`}
+    >
       <SectionContainer>
         <div className='flex justify-between py-2'>
           <p className=''>New York City Financial Advisor</p>

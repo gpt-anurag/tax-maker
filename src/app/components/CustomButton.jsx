@@ -3,7 +3,7 @@ const CustomButton = ({ children }) => {
     <div className='flex'>
       <a
         href='#'
-        className='flex items-center gap-1 bg-primary100 text-lg font-semibold px-8 py-4 my-8 rounded-full hover:bg-black hover:transition-all hover:duration-300'
+        className='flex items-center gap-1 bg-primary100 text-white text-lg font-semibold px-8 py-4 my-8 rounded-full hover:bg-black hover:transition-all hover:duration-300'
       >
         {children}
       </a>
