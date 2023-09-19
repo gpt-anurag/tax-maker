@@ -6,33 +6,20 @@ import Navbar from "./Navbar";
 import SectionContainer from "./SectionContainer";
 import Sidebar from "./Sidebar";
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 // import bgImg from '../_assets/banner-img2.jpg'
 
 const Header = () => {
-  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const pathname = usePathname();
   return (
     <main
       className={`bg-[url('https://images.unsplash.com/photo-1611416457332-946853cc75d6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1942&q=80')] bg-center object-cover text-white`}
     >
-      {/* {isSidebarOpen ? (
-        <Sidebar
-          setIsSidebarOpen={setIsSidebarOpen}
-          isSidebarOpen={isSidebarOpen}
-        />
-      ) : (
-        <Navbar
-          setIsSidebarOpen={setIsSidebarOpen}
-          isSidebarOpen={isSidebarOpen}
-        />
-      )} */}
-      <Navbar
+      {/* <Sidebar
         isSidebarOpen={isSidebarOpen}
         setIsSidebarOpen={setIsSidebarOpen}
-      />
-      <Sidebar
-        isSidebarOpen={isSidebarOpen}
-        setIsSidebarOpen={setIsSidebarOpen}
-      />
+      /> */}
+      {pathname === "/" && <Navbar />}
 
       <SectionContainer>
         <div className="md:mt-30 mt-20 lg:mt-40">

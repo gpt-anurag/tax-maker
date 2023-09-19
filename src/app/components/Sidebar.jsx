@@ -8,11 +8,11 @@ import { FaLinkedinIn, FaPhone, FaTwitter } from "react-icons/fa";
 import { HiMail } from "react-icons/hi";
 import { GrFacebookOption } from "react-icons/gr";
 
-const Sidebar = ({ setIsSidebarOpen, isSidebarOpen }) => {
+const Sidebar = ({ setIsSidebarOpen, isSidebarOpen, pathname }) => {
   return (
     <section
       className={`fixed top-0 w-full bg-white text-black md:hidden ${
-        isSidebarOpen ? "hidden" : "block"
+        isSidebarOpen ? "block" : "hidden"
       }`}
     >
       <div className="flex items-center justify-between p-4">

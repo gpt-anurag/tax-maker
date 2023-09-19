@@ -1,15 +1,9 @@
-import React from 'react'
-import Navbar from '../components/Navbar'
-import Contact from '../components/Contact'
+import React from "react";
+import Navbar from "../components/Navbar";
+import Contact from "../components/Contact";
 
 const ServicesLayout = ({ children }) => {
-  return (
-    <>
-      <Contact />
-      <Navbar />
-      {children}
-    </>
-  )
-}
+  return <>{children}</>;
+};
 
-export default ServicesLayout
+export default ServicesLayout;

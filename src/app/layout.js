@@ -1,4 +1,5 @@
-import Contact from "./components/Contact";
+"use client";
+import { usePathname } from "next/navigation";
 import Navbar from "./components/Navbar";
 import "./globals.css";
 // import { Inter } from 'next/font/google'
@@ -11,11 +12,13 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  const pathname = usePathname();
   return (
     <html lang="en" className="scroll-smooth">
       {/* <body className={inter.className}>{children}</body> */}
       <body>
-        <Contact />
+        {pathname !== "/" && <Navbar />}
+
         {children}
       </body>
     </html>
