@@ -57,7 +57,7 @@ const ServicesSelection = () => {
         Services
       </a>
       {isOpen && (
-        <div className="absolute -right-96 top-16 hidden w-max gap-8 rounded bg-white/90 p-5 font-thin text-black md:flex">
+        <div className="absolute top-16 hidden w-max gap-8 rounded bg-white/90 p-5 font-thin text-black md:-right-80 md:flex lg:-right-96">
           {services_menu.map((item) => {
             return (
               <div key={item.id}>

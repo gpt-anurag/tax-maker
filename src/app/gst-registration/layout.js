@@ -1,15 +1,7 @@
-import React from 'react'
-import Navbar from '../components/Navbar'
-import Contact from '../components/Contact'
+import React from "react";
 
 const GSTRegistrationLayout = ({ children }) => {
-  return (
-    <>
-      <Contact />
-      <Navbar />
-      {children}
-    </>
-  )
-}
+  return <>{children}</>;
+};
 
-export default GSTRegistrationLayout
+export default GSTRegistrationLayout;
