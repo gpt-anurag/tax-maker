@@ -19,16 +19,16 @@ const Services = () => {
               <div className='absolute inset-0 h-full w-full rounded-xl bg-black/80 px-12 text-center text-slate-200 [transform:rotateY(180deg)] [backface-visibility:hidden]'>
                 <div className='flex min-h-full flex-col items-center justify-center text-lg'>
                   <p className='hover:border-b-2 mb-2'>
-                    <Link href='/pan#intro'>Intro</Link>
+                    <Link href='/gst-registration#intro'>Intro</Link>
                   </p>
                   <p className='hover:border-b-2 mb-2'>
-                    <Link href='/pan#benifits'>Benifits</Link>
+                    <Link href='/gst-registration#benefits'>Benefits</Link>
                   </p>
                   <p className='hover:border-b-2 mb-2'>
-                    <Link href='/pan#documents'>Documents</Link>
+                    <Link href='/gst-registration#documents'>Documents</Link>
                   </p>
                   <p className='hover:border-b-2 mb-2'>
-                    <Link href='/pan#faq'>FAQ</Link>
+                    <Link href='/gst-registration#faq'>FAQ</Link>
                   </p>
                   <button className='my-2 mt-7 rounded-md bg-neutral-200 p-2 text-lg hover:bg-neutral-700 hover:text-neutral-200 text-neutral-700 duration-300'>
                     Apply

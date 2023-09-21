@@ -18,6 +18,9 @@ module.exports = {
         FontDark200: '#2b2e51',
         FontHover: '#d4d3d2',
       },
+      transitionProperty: {
+        all: 'all', // Enable transitions for all properties
+      },
     },
   },
   plugins: [],

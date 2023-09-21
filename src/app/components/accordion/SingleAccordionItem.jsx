@@ -1,7 +1,23 @@
-import React from "react";
+import React from 'react'
 
-const SingleAccordionItem = () => {
-  return <div>SingleAccordionItem</div>;
-};
+import { GrAddCircle, GrSubtractCircle } from 'react-icons/gr'
 
-export default SingleAccordionItem;
+const SingleAccordionItem = ({
+  question,
+  answer,
+  selected,
+  toggleSelected,
+  id,
+}) => {
+  return (
+    <>
+      <div>
+        <h3>{question}</h3>
+        {id === selected}
+        <GrAddCircle />
+      </div>
+    </>
+  )
+}
+
+export default SingleAccordionItem

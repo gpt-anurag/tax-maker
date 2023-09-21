@@ -1,55 +1,55 @@
-import React, { useState } from "react";
-import { v4 as uuidv4 } from "uuid";
+import React, { useState } from 'react'
+import { v4 as uuidv4 } from 'uuid'
 
 const services_menu = [
   {
     id: uuidv4(),
-    title: "Heading",
+    title: 'Heading',
     options: [
-      "Single option",
-      "Single option",
-      "Single option",
-      "Single option",
+      'Single option',
+      'Single option',
+      'Single option',
+      'Single option',
     ],
   },
   {
     id: uuidv4(),
-    title: "Heading",
+    title: 'Heading',
     options: [
-      "Single option",
-      "Single option",
-      "Single option",
-      "Single option",
+      'Single option',
+      'Single option',
+      'Single option',
+      'Single option',
     ],
   },
   {
     id: uuidv4(),
-    title: "Heading",
+    title: 'Heading',
     options: [
-      "Single option",
-      "Single option",
-      "Single option",
-      "Single option",
+      'Single option',
+      'Single option',
+      'Single option',
+      'Single option',
     ],
   },
   {
     id: uuidv4(),
-    title: "Heading",
+    title: 'Heading',
     options: [
-      "Single option",
-      "Single option",
-      "Single option",
-      "Single option",
+      'Single option',
+      'Single option',
+      'Single option',
+      'Single option',
     ],
   },
-];
+]
 
 const ServicesSelection = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false)
   return (
     <>
       <a
-        href="#"
+        href='#'
         // onMouseOver={() => setIsOpen(!isOpen)}
         onMouseEnter={() => setIsOpen(true)}
         onMouseLeave={() => setIsOpen(false)}
@@ -57,7 +57,7 @@ const ServicesSelection = () => {
         Services
       </a>
       {isOpen && (
-        <div className="absolute top-16 hidden w-max gap-8 rounded bg-white/90 p-5 font-thin text-black md:-right-80 md:flex lg:-right-96">
+        <div className='absolute top-16 hidden w-max gap-8 rounded bg-white border p-5 font-thin text-black md:-right-80 md:flex lg:-right-96'>
           {services_menu.map((item) => {
             return (
               <div key={item.id}>
@@ -68,12 +68,12 @@ const ServicesSelection = () => {
                   ))}
                 </ul>
               </div>
-            );
+            )
           })}
         </div>
       )}
     </>
-  );
-};
+  )
+}
 
-export default ServicesSelection;
+export default ServicesSelection
