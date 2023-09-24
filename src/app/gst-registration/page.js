@@ -4,7 +4,7 @@ import React, { useState } from 'react'
 import SectionContainer from '../components/SectionContainer'
 import Link from 'next/link'
 import RequiredDocuments from '../components/RequiredDocuments'
-import Accordion from '../components/accordion/Accordion'
+import Accordion from '../components/Accordion'
 import { usePathname } from 'next/navigation'
 
 const GSTRegistration = () => {

@@ -2,7 +2,6 @@
 
 import React, { useState } from 'react'
 import { v4 as uuidv4 } from 'uuid'
-import SingleAccordionItem from './SingleAccordionItem'
 import { GrAddCircle, GrSubtractCircle } from 'react-icons/gr'
 
 const accordion_data = [
@@ -53,7 +52,10 @@ const Accordion = () => {
       {accordion_data.map((item) => {
         const isOpen = openItems.includes(item.id)
         return (
-          <div key={item.id} className='border-b rounded p-4'>
+          <div
+            key={item.id}
+            className='border-b rounded p-4'
+          >
             <div
               onClick={() => toggleSelected(item.id)}
               className='flex justify-between items-center cursor-pointer pt-4'
