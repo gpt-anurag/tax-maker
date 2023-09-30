@@ -3,6 +3,7 @@
 import React, { useState } from 'react'
 import { v4 as uuidv4 } from 'uuid'
 import { GrAddCircle, GrSubtractCircle } from 'react-icons/gr'
+import { BiChevronDown, BiChevronUp } from 'react-icons/bi'
 
 const accordion_data = [
   {
@@ -63,7 +64,11 @@ const Accordion = () => {
               <h3 className='text-xl font-semibold text-slate-900'>
                 {item.question}
               </h3>
-              {isOpen ? <GrSubtractCircle /> : <GrAddCircle />}
+              {isOpen ? (
+                <BiChevronUp className='text-2xl' />
+              ) : (
+                <BiChevronDown className='text-2xl' />
+              )}
             </div>
             <p
               className={`transition-all duration-300 ease-in ${

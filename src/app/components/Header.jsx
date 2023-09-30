@@ -10,7 +10,7 @@ import { GrFormNext, GrFormPrevious } from 'react-icons/gr'
 // import clsx from 'clsx'
 import { clsx } from 'clsx'
 
-const params = {
+export const params = {
   wrapAround: true,
   defaultControlsConfig: {
     pagingDotsStyle: { padding: '0.5rem', fill: 'white' },
@@ -21,7 +21,12 @@ const params = {
       position: 'relative',
       right: '1rem',
     },
-    nextButtonText: <GrFormNext size={32} filter='invert(1)' />,
+    nextButtonText: (
+      <GrFormNext
+        size={32}
+        filter='invert(1)'
+      />
+    ),
     prevButtonStyle: {
       padding: '0.5rem',
       borderRadius: '50%',
@@ -29,7 +34,12 @@ const params = {
       position: 'relative',
       left: '1rem',
     },
-    prevButtonText: <GrFormPrevious size={32} filter='invert(1)' />,
+    prevButtonText: (
+      <GrFormPrevious
+        size={32}
+        filter='invert(1)'
+      />
+    ),
   },
 }
 
@@ -66,6 +76,7 @@ const Header = () => {
       {pathname === '/' && <Navbar />}
       <Carousel
         {...params}
+        autoplay
         // renderCenterLeftControls={renderCenterLeftControls}
         // renderCenterRightControls={renderCenterRightControls}
       >

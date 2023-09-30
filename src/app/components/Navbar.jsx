@@ -47,8 +47,8 @@ const Navbar = () => {
                     pathname !== '/' && 'hover:border-gray-800'
                   } py-2`}
                 >
-                  <Link href='/services'>Services</Link>
-                  {/* <ServicesSelection /> */}
+                  {/* <Link href='/services'>Services</Link> */}
+                  <ServicesSelection />
                 </li>
                 <li
                   className={`cursor-pointer border-b-2 border-transparent hover:border-white ${

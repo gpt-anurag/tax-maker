@@ -12,3 +12,8 @@
 <!-- 10. Documents section -->
 7. Remove hover in smaller displays
 8. Image optimization nextjs https://www.youtube.com/watch?v=AnSftXHwBFw
+
+9. Dropdown
+10. Card Flip
+11. Reviews Carousel
+12.

@@ -53,7 +53,8 @@ const Services = () => {
         <h1 className='text-center text-5xl font-semibold my-4'>
           All Services
         </h1>
-        <div>
+        <div className='flex flex-col gap-8 mb-20'>
+          <CardSection card_data={card_data} />
           <CardSection card_data={card_data} />
         </div>
       </SectionContainer>
