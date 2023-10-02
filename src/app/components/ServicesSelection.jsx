@@ -44,19 +44,18 @@ const services_menu = [
   },
 ]
 
-const ServicesSelection = () => {
-  const [isOpen, setIsOpen] = useState(false)
+const ServicesSelection = ({ dropdown, setDropdown }) => {
   return (
     <>
       <a
         href='#'
-        onMouseOver={() => setIsOpen(!isOpen)}
+        onClick={() => setDropdown(!dropdown)}
         // onMouseEnter={() => setIsOpen(true)}
         // onMouseLeave={() => setIsOpen(false)}
       >
         Services
       </a>
-      {isOpen && (
+      {dropdown && (
         // <div className='absolute top-16 hidden w-max gap-8 rounded bg-white border p-5 font-thin text-black md:-right-80 md:flex lg:-right-96'>
         //   {services_menu.map((item) => {
         //     return (
@@ -71,13 +70,25 @@ const ServicesSelection = () => {
         //     )
         //   })}
         // </div>
-        <ul className='absolute bg-white text-gray-700 p-4 rounded border top-14'>
-          <li>Registration</li>
-          <li>License</li>
-          <li>IT Filing</li>
-          <li>Insurance</li>
-          <li>Home Loan</li>
-          <li>All Services</li>
+        <ul className='absolute text-lg font-normal bg-white text-gray-700 pl-6 pr-10  py-4 rounded border top-10'>
+          <li className='hover:text-primary100 hover:font-medium hover:underline'>
+            Registration
+          </li>
+          <li className='hover:text-primary100 hover:font-medium hover:underline'>
+            License
+          </li>
+          <li className='hover:text-primary100 hover:font-medium hover:underline'>
+            IT Filing
+          </li>
+          <li className='hover:text-primary100 hover:font-medium hover:underline'>
+            Insurance
+          </li>
+          <li className='hover:text-primary100 hover:font-medium hover:underline'>
+            Home Loan
+          </li>
+          <li className='hover:text-primary100 hover:font-medium hover:underline'>
+            All Services
+          </li>
         </ul>
       )}
     </>

@@ -16,6 +16,23 @@ import { useState } from 'react'
 const Navbar = () => {
   const pathname = usePathname()
   const [isSidebarOpen, setIsSidebarOpen] = useState(false)
+  const [dropdown, setDropdown] = useState(false)
+
+  const onMouseEnter = () => {
+    if (window.innerWidth < 768) {
+      setDropdown(false)
+    } else {
+      setDropdown(true)
+    }
+  }
+
+  const onMouseLeave = () => {
+    if (window.innerWidth < 768) {
+      setDropdown(false)
+    } else {
+      setDropdown(false)
+    }
+  }
 
   return (
     <div className='relative z-30'>
@@ -33,7 +50,7 @@ const Navbar = () => {
                 <p>Financial</p>
               </div>
             </Link>
-            <div className='hidden items-center justify-between gap-6 text-sm font-medium md:flex lg:text-xl'>
+            <fdiv className='hidden items-center justify-between gap-6 text-sm font-medium md:flex lg:text-xl'>
               <ul className='flex justify-between gap-6'>
                 <li
                   className={`cursor-pointer border-b-2 border-transparent hover:border-white ${
@@ -43,12 +60,17 @@ const Navbar = () => {
                   <Link href='/'>Home</Link>
                 </li>
                 <li
-                  className={`relative cursor-pointer border-b-2 border-transparent hover:border-white ${
+                  className={`relative cursor-pointer border-b-2   border-transparent hover:border-white ${
                     pathname !== '/' && 'hover:border-gray-800'
                   } py-2`}
+                  onMouseEnter={onMouseEnter}
+                  onMouseLeave={onMouseLeave}
                 >
                   {/* <Link href='/services'>Services</Link> */}
-                  <ServicesSelection />
+                  <ServicesSelection
+                    dropdown={dropdown}
+                    setDropdown={setDropdown}
+                  />
                 </li>
                 <li
                   className={`cursor-pointer border-b-2 border-transparent hover:border-white ${
@@ -81,7 +103,7 @@ const Navbar = () => {
               </ul>
               <FaSearch />
               <RiShoppingBag2Line />
-            </div>
+            </fdiv>
             <button
               onClick={() => setIsSidebarOpen(!isSidebarOpen)}
               className='block text-3xl md:hidden'

@@ -5,13 +5,13 @@ import CardSection from '../components/CardSection'
 
 const card_data = [
   { id: uuidv4(), card_title: 'Service 1' },
-  // { id: uuidv4(), card_title: 'Service 2' },
-  // { id: uuidv4(), card_title: 'Service 3' },
-  // { id: uuidv4(), card_title: 'Service 4' },
-  // { id: uuidv4(), card_title: 'Service 5' },
-  // { id: uuidv4(), card_title: 'Service 6' },
-  // { id: uuidv4(), card_title: 'Service 7' },
-  // { id: uuidv4(), card_title: 'Service 8' },
+  { id: uuidv4(), card_title: 'Service 2' },
+  { id: uuidv4(), card_title: 'Service 3' },
+  { id: uuidv4(), card_title: 'Service 4' },
+  { id: uuidv4(), card_title: 'Service 5' },
+  { id: uuidv4(), card_title: 'Service 6' },
+  { id: uuidv4(), card_title: 'Service 7' },
+  { id: uuidv4(), card_title: 'Service 8' },
 ]
 
 const Services = () => {
