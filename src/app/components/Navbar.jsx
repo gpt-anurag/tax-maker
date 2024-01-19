@@ -60,7 +60,7 @@ const Navbar = () => {
                   <Link href='/'>Home</Link>
                 </li>
                 <li
-                  className={`relative cursor-pointer border-b-2   border-transparent hover:border-white ${
+                  className={`relative border-b-2 border-transparent hover:border-white ${
                     pathname !== '/' && 'hover:border-gray-800'
                   } py-2`}
                   onMouseEnter={onMouseEnter}

@@ -2,6 +2,7 @@ import React from 'react'
 import SectionContainer from '../components/SectionContainer'
 import { v4 as uuidv4 } from 'uuid'
 import CardSection from '../components/CardSection'
+import { GrEdit } from 'react-icons/gr'
 
 const card_data = [
   { id: uuidv4(), card_title: 'Service 1' },
@@ -51,11 +52,25 @@ const Services = () => {
           </div>
         </div> */}
 
-        <h1 className='text-center text-5xl font-semibold my-4'>
+        <h1 className='text-center text-5xl font-semibold mt-14'>
           All Services
         </h1>
-        <div className='flex flex-col gap-8 mb-20'>
+        {/* <div className='flex flex-col gap-8 mb-20'>
           <CardSection card_data={card_data} />
+        </div> */}
+        <div className='grid grid-cols-3'>
+          <div className='grid grid-cols-2'>
+            <GrEdit className='col-auto' />
+            <h2 className=''>Registrations</h2>
+
+            <ul className='col-start-2'>
+              <li>Registration Example</li>
+              <li>Registration Example</li>
+              <li>Registration Example</li>
+              <li>Registration Example</li>
+              <li>Registration Example</li>
+            </ul>
+          </div>
         </div>
       </SectionContainer>
     </>

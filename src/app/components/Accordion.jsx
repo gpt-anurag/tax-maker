@@ -37,7 +37,7 @@ const accordion_data = [
   },
 ]
 
-const Accordion = () => {
+const Accordion = ({ faq }) => {
   const [openItems, setOpenItems] = useState([])
 
   const toggleSelected = (id) => {
@@ -49,16 +49,13 @@ const Accordion = () => {
   }
 
   return (
-    <section className='flex flex-col p-4'>
-      {accordion_data.map((item) => {
-        const isOpen = openItems.includes(item.id)
+    <section className='flex flex-col'>
+      {faq?.map((item, i) => {
+        const isOpen = openItems.includes(i)
         return (
-          <div
-            key={item.id}
-            className='border-b rounded p-4'
-          >
+          <div key={i} className='border-b rounded p-2'>
             <div
-              onClick={() => toggleSelected(item.id)}
+              onClick={() => toggleSelected(i)}
               className='flex justify-between items-center cursor-pointer pt-4'
             >
               <h3 className='text-xl font-semibold text-slate-900'>

@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { v4 as uuidv4 } from 'uuid'
+import ServicesDrop from './ServicesDrop'
 
 const services_menu = [
   {
@@ -70,26 +71,29 @@ const ServicesSelection = ({ dropdown, setDropdown }) => {
         //     )
         //   })}
         // </div>
-        <ul className='absolute text-lg font-normal bg-white text-gray-700 pl-6 pr-10  py-4 rounded border top-10'>
-          <li className='hover:text-primary100 hover:font-medium hover:underline'>
-            Registration
-          </li>
-          <li className='hover:text-primary100 hover:font-medium hover:underline'>
-            License
-          </li>
-          <li className='hover:text-primary100 hover:font-medium hover:underline'>
-            IT Filing
-          </li>
-          <li className='hover:text-primary100 hover:font-medium hover:underline'>
-            Insurance
-          </li>
-          <li className='hover:text-primary100 hover:font-medium hover:underline'>
-            Home Loan
-          </li>
-          <li className='hover:text-primary100 hover:font-medium hover:underline'>
-            All Services
-          </li>
-        </ul>
+        // <ul className='absolute text-lg font-normal bg-white text-gray-700 pl-6 pr-10  py-4 rounded border top-10'>
+        //   <li className='hover:text-primary100 hover:font-medium hover:underline'>
+        //     Registration
+        //   </li>
+        //   <li className='hover:text-primary100 hover:font-medium hover:underline'>
+        //     License
+        //   </li>
+        //   <li className='hover:text-primary100 hover:font-medium hover:underline'>
+        //     IT Filing
+        //   </li>
+        //   <li className='hover:text-primary100 hover:font-medium hover:underline'>
+        //     Insurance
+        //   </li>
+        //   <li className='hover:text-primary100 hover:font-medium hover:underline'>
+        //     Home Loan
+        //   </li>
+        //   <li className='hover:text-primary100 hover:font-medium hover:underline'>
+        //     All Services
+        //   </li>
+        // </ul>
+        <div className='absolute -left-[600px] w-[64vw]'>
+          <ServicesDrop />
+        </div>
       )}
     </>
   )

@@ -2,9 +2,18 @@
 import { usePathname } from 'next/navigation'
 import Navbar from './components/Navbar'
 import './globals.css'
-// import { Inter } from 'next/font/google'
+import { Inter, Nunito, Poppins } from 'next/font/google'
+import Footer from './components/Footer'
 
-// const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ['latin'] })
+const poppins = Poppins({
+  subsets: ['latin'],
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
+})
+const nunito = Nunito({
+  subsets: ['latin'],
+  weight: ['200', '300', '400', '500', '600', '700', '800', '900'],
+})
 
 export const metadata = {
   title: 'Create Next App',
@@ -16,10 +25,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang='en' className='scroll-smooth'>
       {/* <body className={inter.className}>{children}</body> */}
-      <body>
+      <body className={nunito.className}>
         {pathname !== '/' && <Navbar />}
 
         {children}
+        <Footer />
       </body>
     </html>
   )
