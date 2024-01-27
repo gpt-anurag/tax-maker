@@ -7,8 +7,8 @@ const servicesNavData = [
     title: 'Registration',
     variants: [
       { name: 'GST', icon: '/tax-icons/gst.png' },
-      { name: 'ESI', icon: '/tax-icons/esi.png' },
-      { name: 'EPFO', icon: '/tax-icons/epfo.png' },
+      { name: 'ESI', icon: '/tax-icons/ESIC-Color.svg' },
+      { name: 'EPFO', icon: '/tax-icons/EPFO-Color.svg' },
       { name: 'Aadhar', icon: '/tax-icons/aadhar-card.png' },
       { name: 'Voter ID', icon: '/tax-icons/voter-id.png' },
       { name: 'Passport', icon: '/tax-icons/passport.png' },

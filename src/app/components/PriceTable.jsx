@@ -11,8 +11,9 @@ const PriceTable = ({ priceTableData, id }) => {
           return (
             <div
               key={i}
-              className={`grid grid-cols-2 py-4 text-lg border-b ${
-                i === 0 && 'font-bold text-xl border-b-4'
+              className={`grid grid-cols-2 py-4 text-lg border-b last-of-type:border-0 ${
+                i === 0 &&
+                'font-bold text-xl border-b-4 text-black/80 -m-4 px-4 pt-4 mb-2 bg-green-300 '
               }`}
             >
               <p>{item.h1}</p>

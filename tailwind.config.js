@@ -21,6 +21,9 @@ module.exports = {
       transitionProperty: {
         all: 'all', // Enable transitions for all properties
       },
+      fontFamily: {
+        hanumanFont: ['Hanuman', 'serif'],
+      },
     },
   },
   plugins: [],

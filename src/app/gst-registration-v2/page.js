@@ -11,6 +11,7 @@ import RequiredDocuments2 from '../components/RequiredDocuments2'
 import { MdEditDocument } from 'react-icons/md'
 import PriceTable from '../components/PriceTable'
 import RenewalCard from '../components/RenewalCard'
+import LicenseTypes from '../components/LicenseTypes'
 
 const blog_data = [
   {
@@ -18,6 +19,12 @@ const blog_data = [
     title: 'GST Registration',
     intro:
       'Goods and Services Tax (GST) is a pivotal taxation system in India, unifying various indirect taxes under a single umbrella. Obtaining a GST registration certificate is a fundamental step for businesses to comply with the law. In this guide, we will delve into key aspects of GST registration, providing valuable insights and addressing specific queries related to the process.',
+    headline:
+      'Don’t Let GST Confuse You: Get Expert Guidance and Support from GST Registration Services',
+    catchyIntro: `Imagine a world where taxes weren't a burden, but a <b>gateway to
+      growth</b> and unlocking new opportunities. That's the power of GST
+      registration, and in this post, we'll be your sensible guide,
+      navigating you through the process with <b>clarity and confidence</b>`,
     hero_img: '/tax-icons/gst.png',
     types: ['Regular', 'Composition', 'Non-Resident'],
     eligibile: [
@@ -119,6 +126,31 @@ const blog_data = [
           'Goods and Services Tax(GST) is a comprehensive tax levied on manufacture, trade and services across India. From 1st July, 2017 GST has replaced most of Centre and State imposed indirect taxes like VAT, Service Tax , Excise etc. Goods and Services Tax Identification Number (GSTIN) is a 15 digits state-wise PAN-based number to be used to identify businesses registered under GST. <a>Click here</a> to know your GSTIN.',
       },
     ],
+    types: [
+      {
+        title: 'Regular',
+        details: [
+          'Businesses with an annual turnover exceeding Rs. 40 lakhs (Rs. 20 lakhs in special category states) for goods and Rs.20 lakhs (Rs.10 lakhs in special category states) for services.',
+          'Inter-state suppliers, regardless of turnover.',
+          'Suitable for small businesses with low turnover and simpler transactions.',
+        ],
+      },
+      {
+        title: 'Composition',
+        details: [
+          'Businesses with an annual turnover up to Rs. 1.5 crore (Rs. 75 lakhs in special category states) for goods and Rs. 50 lakhs for services.',
+          'Manufacturers, traders, and restaurants (not serving alcoholic beverages).',
+          'Suitable for larger businesses with complex transactions and significant ITC claims.',
+        ],
+      },
+      {
+        title: 'Non-Resident',
+        details: [
+          'Does not have a fixed place of business or residence in India.',
+          'Foreign companies supplying goods or services in India.',
+        ],
+      },
+    ],
     notes: [
       {
         title: '',
@@ -210,47 +242,47 @@ const GSTRegistration = () => {
     <>
       <SectionContainer>
         <div className='grid grid-cols-5'>
-          <aside className='col-span-1 mr-10 hidden basis-1/5 border-r-2 md:block'>
+          <aside className='col-span-1 mr-10 pt-10 hidden basis-1/5 border-r-2 md:block'>
             <ul className='sticky top-0 flex flex-col pt-4 text-lg font-medium divide-y'>
               <li className='py-2 '>
-                <a
+                <Link
                   href='#intro'
                   className='hover:text-primary100 border-b border-b-primary100/0 hover:border-b-primary100/100'
                 >
                   Intro
-                </a>
+                </Link>
               </li>
               <li className='py-2 '>
-                <a
+                <Link
                   href='#req-documents'
                   className='hover:text-primary100 border-b border-b-primary100/0 hover:border-b-primary100/100'
                 >
                   Required Documents
-                </a>
+                </Link>
               </li>
               <li className='py-2 '>
-                <a
+                <Link
                   href='#price-table'
                   className='hover:text-primary100 border-b border-b-primary100/0 hover:border-b-primary100/100'
                 >
                   Price Table
-                </a>
+                </Link>
               </li>
               <li className='py-2 '>
-                <a
+                <Link
                   href='#renewal'
                   className='hover:text-primary100 border-b border-b-primary100/0 hover:border-b-primary100/100'
                 >
                   Renewal
-                </a>
+                </Link>
               </li>
               <li className='py-2 '>
-                <a
+                <Link
                   href='#faq'
                   className='hover:text-primary100 border-b border-b-primary100/0 hover:border-b-primary100/100'
                 >
                   FAQ
-                </a>
+                </Link>
               </li>
             </ul>
           </aside>
@@ -259,6 +291,13 @@ const GSTRegistration = () => {
             className='col-span-4 grid grid-cols-4 gap-4 items-center pt-20 pb-8 border-b-2'
             id='intro'
           >
+            <h1 className='font-hanumanFont font-bold col-span-5 text-3xl'>
+              {data.headline}
+            </h1>
+            <p
+              className='col-span-5 text-xl mb-10'
+              dangerouslySetInnerHTML={{ __html: data.catchyIntro }}
+            ></p>
             <div className='col-span-1'>
               <Image
                 src={data.hero_img}
@@ -273,6 +312,7 @@ const GSTRegistration = () => {
               <p className='text-lg'>{data.intro}</p>
             </div>
             <RequiredDocuments2 documents={data.documents} id='req-documents' />
+            <LicenseTypes license={data.types} />
             <PriceTable priceTableData={data.price_2col} id='price-table' />
             <RenewalCard renewal={data.renewal} id='renewal' />
             <div className='col-span-4' id='faq'>
