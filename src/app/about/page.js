@@ -27,16 +27,9 @@ const AboutPage = () => {
             and compliance, so you can focus on what matters most: running your
             business.
           </p>
-          {/* <p>
-            We believe in partnering with our clients, understanding their
-            unique needs, and crafting personalized strategies to achieve their
-            specific tax goals. Whether you're looking to minimize your tax
-            burden, maximize your bottom line, or navigate complex regulations,
-            we have the expertise and resources to ensure your success.
-          </p> */}
           <p>
-            Join us at Tax Maker and experience the difference. Let's make tax
-            savvy your key to success!
+            {`Join us at Tax Maker and experience the difference. Let's make tax
+            savvy your key to success!`}
           </p>
         </div>
         <div className='col-span-4'>
