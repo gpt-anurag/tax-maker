@@ -1,15 +1,9 @@
-import React from 'react'
-import Contact from '../components/Contact'
-import Navbar from '../components/Navbar'
+import React from "react";
+import Contact from "../components/Contact";
+import Navbar from "../components/Navbar";
 
 const PanLayout = ({ children }) => {
-  return (
-    <>
-      <Contact />
-      <Navbar />
-      {children}
-    </>
-  )
-}
+  return <>{children}</>;
+};
 
-export default PanLayout
+export default PanLayout;

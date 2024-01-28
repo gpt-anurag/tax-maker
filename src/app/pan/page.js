@@ -7,7 +7,7 @@ const Pan = () => {
     <>
       <SectionContainer>
         <AboutSection title={'Intro'} id={'intro'} />
-        <AboutSection title={'Benifits'} id={'benifits'} />
+        <AboutSection title={'Benefits'} id={'benefits'} />
         <AboutSection title={'Documents'} id={'documents'} />
         <AboutSection title={'FAQ'} id={'faq'} />
       </SectionContainer>

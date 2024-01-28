@@ -10,21 +10,21 @@ const Contact = () => {
   const pathname = usePathname()
   return (
     <section
-      className={`bg-primary100 text-white top-0 w-full hidden text-sm md:block lg:text-base ${
+      className={`top-0 hidden w-full bg-[#232329] text-sm text-white md:block lg:text-base ${
         pathname !== '/' && 'sticky'
       }`}
     >
       <SectionContainer>
         <div className='flex justify-between py-2'>
-          <p className=''>New York City Financial Advisor</p>
+          <p className=''>Tax Maker Company</p>
           <div className='flex gap-10'>
             <div className='flex items-center'>
               <FaPhone />
-              <p className='ml-2'>+91-1234567890</p>
+              <p className='ml-2'>+91-9866710543</p>
             </div>
             <div className='flex items-center'>
               <HiMail />
-              <p className='ml-2'>office@example.com</p>
+              <p className='ml-2'>taxmaker0522@gmail.com</p>
             </div>
             <div className='flex items-center'>
               <p className='mr-2'>Follow</p>

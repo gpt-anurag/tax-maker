@@ -56,7 +56,7 @@ const Services = () => {
               <h2 className="mb-4 text-4xl font-semibold">What we do?</h2>
               <ul className="mb-3 font-semibold text-primary100 ">
                 <li className="mb-1 hover:text-primaryFont">
-                  text-xl <Link href="/gst-registration">GST Registration</Link>
+                  <Link href="/gst-registration">GST Registration</Link>
                 </li>
                 <li className="mb-1 hover:text-primaryFont">
                   <Link href="/firm-registration">Firm Registration</Link>
