@@ -35,9 +35,6 @@ const Sidebar = ({ setIsSidebarOpen, isSidebarOpen, pathname }) => {
             <Link href='/services'>Services</Link>
           </li>
           <li className='rounded p-2 hover:bg-blue-200'>
-            <Link href='#'>Insights</Link>
-          </li>
-          <li className='rounded p-2 hover:bg-blue-200'>
             <Link href='#'>About</Link>
           </li>
           <li className='rounded p-2 hover:bg-blue-200'>

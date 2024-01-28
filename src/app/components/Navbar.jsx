@@ -72,20 +72,7 @@ const Navbar = () => {
                     setDropdown={setDropdown}
                   />
                 </li>
-                <li
-                  className={`cursor-pointer border-b-2 border-transparent hover:border-white ${
-                    pathname !== '/' && 'hover:border-gray-800'
-                  } py-2`}
-                >
-                  <Link href='/pan'>Pan</Link>
-                </li>
-                <li
-                  className={`cursor-pointer border-b-2 border-transparent hover:border-white ${
-                    pathname !== '/' && 'hover:border-gray-800'
-                  } py-2`}
-                >
-                  Insights
-                </li>
+
                 <li
                   className={`cursor-pointer border-b-2 border-transparent hover:border-white ${
                     pathname !== '/' && 'hover:border-gray-800'
