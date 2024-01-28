@@ -12,6 +12,7 @@ import ServicesSelection from './ServicesSelection'
 import Contact from './Contact'
 import Sidebar from './Sidebar'
 import { useState } from 'react'
+import Image from 'next/image'
 
 const Navbar = () => {
   const pathname = usePathname()
@@ -38,16 +39,23 @@ const Navbar = () => {
     <div className='relative z-30'>
       <Contact />
       <div
-        className={`top-0 w-full border-b border-gray-500/50 bg-primary400 text-white md:top-9 lg:top-10 ${
-          pathname === '/' ? 'bg-transparent absolute' : 'sticky'
-        }`}
+        className={`w-full border-b border-gray-500/50 bg-[#3d3d49] shadow-[0px_21px_25px_-19px_rgba(0,0,0,0.45)] text-white md:top-9 lg:top-10`}
       >
+        {/* ${
+          pathname === '/' ? 'bg-transparent absolute' : 'sticky'
+        } */}
         <SectionContainer>
-          <nav className={`flex items-center justify-between py-4 `}>
+          <nav className={`flex items-center justify-between py-4`}>
             <Link href='/'>
               <div className='flex items-center gap-4 text-3xl font-bold md:text-4xl lg:text-5xl'>
-                <TbChartDonutFilled />
-                <p>Financial</p>
+                {/* <TbChartDonutFilled />
+                <p>Financial</p> */}
+                <Image
+                  src='/main-logo.png'
+                  height={60}
+                  width={142}
+                  alt='main logo'
+                />
               </div>
             </Link>
             <fdiv className='hidden items-center justify-between gap-6 text-sm font-medium md:flex lg:text-xl'>
@@ -78,7 +86,7 @@ const Navbar = () => {
                     pathname !== '/' && 'hover:border-gray-800'
                   } py-2`}
                 >
-                  About
+                  <Link href={'/about'}>About</Link>
                 </li>
                 <li
                   className={`cursor-pointer border-b-2 border-transparent hover:border-white ${

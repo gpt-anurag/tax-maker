@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
     <html lang='en' className='scroll-smooth'>
       {/* <body className={inter.className}>{children}</body> */}
       <body className={nunito.className}>
-        {pathname !== '/' && <Navbar />}
+        <div className='relative'>{pathname !== '/' && <Navbar />}</div>
 
         {children}
         <Footer />

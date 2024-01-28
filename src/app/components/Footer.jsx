@@ -14,8 +14,8 @@ const Footer = () => {
         <div className='w-full flex justify-center'>
           <Image
             src={'/main-logo.png'}
-            height={200}
-            width={200}
+            height={100}
+            width={230}
             className='pb-8'
             alt='company logo'
           />
