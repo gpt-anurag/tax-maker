@@ -68,7 +68,7 @@ const RequiredDocuments = ({ documents, id }) => {
       <div className='col-span-4 grid grid-cols-2 gap-4'>
         {documents.find((doc) => doc.type === 'bank') && (
           <div className='grid grid-cols-1 content-start gap-4 justify-items-start rounded-md shadow-md border-2 bg-green-100 p-4'>
-            <h3 className='font-semibold text-2xl text-black/70 border-b-2 border-black/10'>
+            <h3 className='font-semibold text-2xl text-black border-b-2 border-black/10'>
               Banking
             </h3>
             {documents
@@ -77,7 +77,7 @@ const RequiredDocuments = ({ documents, id }) => {
                 return (
                   <div
                     key={i}
-                    className='flex items-center justify-center gap-4 text-lg font-semibold text-black/70'
+                    className='flex items-center justify-center gap-4 text-lg font-semibold text-black'
                   >
                     <p className='rounded-full bg-pink-200 p-2 text-xl text-pink-400'>
                       {document?.icon}
@@ -90,7 +90,7 @@ const RequiredDocuments = ({ documents, id }) => {
         )}
         {documents.find((doc) => doc.type === 'govt') && (
           <div className='grid grid-cols-1 content-start gap-4 justify-items-start rounded-md shadow-md border-2 bg-orange-100 p-4'>
-            <h3 className='font-semibold text-2xl text-black/70 border-b-2 border-black/10'>
+            <h3 className='font-semibold text-2xl text-black border-b-2 border-black/10'>
               Government
             </h3>
             {documents
@@ -99,7 +99,7 @@ const RequiredDocuments = ({ documents, id }) => {
                 return (
                   <div
                     key={i}
-                    className='flex items-center justify-center gap-4 text-lg font-semibold text-black/70'
+                    className='flex items-center justify-center gap-4 text-lg font-semibold text-black'
                   >
                     <p className='rounded-full bg-pink-200 p-2 text-xl text-pink-400'>
                       {document?.icon}
@@ -112,7 +112,7 @@ const RequiredDocuments = ({ documents, id }) => {
         )}
         {documents.find((doc) => doc.type === 'address') && (
           <div className='grid grid-cols-1 content-start gap-4 justify-items-start rounded-md shadow-md border-2 bg-blue-100 p-4'>
-            <h3 className='font-semibold text-2xl text-black/70 border-b-2 border-black/10'>
+            <h3 className='font-semibold text-2xl text-black border-b-2 border-black/10'>
               Address
             </h3>
             {documents
@@ -121,7 +121,7 @@ const RequiredDocuments = ({ documents, id }) => {
                 return (
                   <div
                     key={i}
-                    className='flex items-center justify-center gap-4 text-lg font-semibold text-black/70'
+                    className='flex items-center justify-center gap-4 text-lg font-semibold text-black'
                   >
                     <p className='rounded-full bg-pink-200 p-2 text-xl text-pink-400'>
                       {document?.icon}

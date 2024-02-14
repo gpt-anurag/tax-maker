@@ -8,7 +8,7 @@ const LicenseTypes = ({ license, id }) => {
       <h2 className='pt-10 col-span-4 text-3xl font-bold' id={id}>
         License Types
       </h2>
-      <div className='col-span-4 grid grid-cols-2 gap-4'>
+      <div className='col-span-4 grid  gap-4'>
         {license.map((doc, i) => {
           return (
             <div
@@ -18,16 +18,32 @@ const LicenseTypes = ({ license, id }) => {
               ${i === 1 && 'bg-orange-100'} 
               ${i === 2 && 'bg-fuchsia-100'} 
               ${i === 3 && 'bg-blue-100'}
-              ${i === 4 && 'bg-red-100'}              `}
+              ${i === 4 && 'bg-red-100'} `}
             >
-              <h3 className='font-semibold text-2xl text-black/70 border-b-2 border-black/10'>
+              <h3 className='font-semibold text-2xl text-black border-b-2 border-black/10'>
                 {doc.title}
               </h3>
-              <ul className='list-disc px-6 flex flex-col justify-center gap-4 text-lg font-semibold text-black/70'>
+              <ul className='list-disc px-6 flex flex-col justify-center gap-4 text-lg font-semibold text-black'>
                 {doc.details.map((document, i) => {
                   return <li key={i}>{document}</li>
                 })}
               </ul>
+              {doc?.features.length !=0 && (
+              <div className={`w-full p-4 rounded ${i === 0 && 'bg-green-50'} 
+              ${i === 1 && 'bg-orange-50'} 
+              ${i === 2 && 'bg-fuchsia-50'} 
+              ${i === 3 && 'bg-blue-50'}
+              ${i === 4 && 'bg-red-50'}`}>
+              <h4 className='font-semibold text-xl text-black border-b-2 border-black/10'>
+                Features
+              </h4>
+              <ul className='list-disc px-6 flex flex-col justify-center gap-4  text-black'>
+                {doc.features.map((feature, i) => {
+                  return <li key={i}>{feature}</li>
+                })}
+              </ul>
+              </div>
+              )}
             </div>
           )
         })}

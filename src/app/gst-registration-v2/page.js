@@ -12,6 +12,9 @@ import { MdEditDocument } from 'react-icons/md'
 import PriceTable from '../components/PriceTable'
 import RenewalCard from '../components/RenewalCard'
 import LicenseTypes from '../components/LicenseTypes'
+import KeyDifferences from '../components/KeyDifferences'
+import NonEligible from '../components/NonEligible'
+import Benefits from '../components/Benefits'
 
 const blog_data = [
   {
@@ -26,7 +29,6 @@ const blog_data = [
       registration, and in this post, we'll be your sensible guide,
       navigating you through the process with <b>clarity and confidence</b>`,
     hero_img: '/tax-icons/gst.png',
-    types: ['Regular', 'Composition', 'Non-Resident'],
     eligibile: [
       {
         type: 'h1',
@@ -37,7 +39,20 @@ const blog_data = [
         text: 'Businesses with turnover exceeding threshold limits',
       },
     ],
-    nonEligible: [],
+    nonEligible: [
+      {
+        title: 'Agriculturalists',
+        description: "Engaged in agricultural activities, provided their annual turnover doesn't exceed Rs. 20 lakhs.",
+      },
+      {
+        title: 'Small businesses',
+        description : 'Operating within a single state and not crossing the specified turnover limits for goods or services'
+      },
+      {
+        title: 'Individuals',
+        description: 'Supplying goods or services without a business structure and not operating as a business entity.'
+      }
+    ],
     documents: [
       {
         type: 'bank',
@@ -75,7 +90,37 @@ const blog_data = [
         icon: <MdEditDocument />,
       },
     ],
-    Benefits: [],
+    benefits: [
+      {
+        title: 'Benefits & Advantages',
+        // description: 'Advantages'
+      },
+      {
+        title: 'Increased Sales and Revenue',
+        description: 'GST registration allows you to claim ITC(Income Tax Credit) on taxes paid on your purchases. This reduces your overall tax burden, making your products and services more competitive and potentially leading to increased sales and revenue'
+      },
+      {
+        title: 'Improved Access to Markets',
+        description: 'Many government agencies and departments mandate GST registration for suppliers. Registering opens doors to these lucrative contracts and tenders, expanding your market reach'
+      },
+      {
+        title: 'Enhanced Brand Image',
+        description: "A GST registration certificate signifies your business's legitimacy and compliance with tax regulations. This fosters trust and credibility among customers and suppliers, enhancing your brand image"
+      },
+      {
+        title: 'Simplified Compliance',
+        description: "GST replaces a multitude of cascading taxes with a single unified tax as 'One Nation, One Tax', simplifying compliance and reducing paperwork. This saves time and resources, allowing you to focus on core business activities"
+      },
+      {
+        title: 'Transparency and Efficiency',
+        description: 'GST registration and filing are done entirely online through the GST portal, ensuring transparency and efficiency. Real-time data tracking minimizes errors and facilitates faster refunds'
+      },
+      {
+        title: 'Access to Special Schemes',
+        description: 'Small businesses with a turnover below Rs. 1.5 crore can opt for the composition scheme, offering simplified tax compliance and lower tax rates'
+      }
+
+    ],
     renewal: [
       `Telangana Department of Labour offers online renewal for most licenses through their
     portal:`,
@@ -132,8 +177,15 @@ const blog_data = [
         details: [
           'Businesses with an annual turnover exceeding Rs. 40 lakhs (Rs. 20 lakhs in special category states) for goods and Rs.20 lakhs (Rs.10 lakhs in special category states) for services.',
           'Inter-state suppliers, regardless of turnover.',
-          'Suitable for small businesses with low turnover and simpler transactions.',
+          'Certain categories like manufacturers, e-commerce operators, TDS/TCS deductors, and those subject to reverse charge.',
         ],
+        features: [
+          'Requires maintaining detailed records of purchases and sales.',
+          'File GST returns every quarter (monthly for businesses with turnover exceeding Rs. 5 crore).',
+          'Pay tax on the value added at each stage of the supply chain.',
+          'Claim input tax credit (ITC) on taxes paid on purchases, reducing the overall tax burden.',
+          'Suitable for larger businesses with complex transactions and significant ITC claims.',
+        ]
       },
       {
         title: 'Composition',
@@ -142,6 +194,12 @@ const blog_data = [
           'Manufacturers, traders, and restaurants (not serving alcoholic beverages).',
           'Suitable for larger businesses with complex transactions and significant ITC claims.',
         ],
+        features: [
+          'Simplified compliance with simpler record-keeping and return filing (annual or quarterly).',
+          'Pay a fixed percentage of turnover as tax (no separate tax on value added).',
+          'Cannot claim ITC on purchases.',
+          'Suitable for small businesses with low turnover and simpler transactions.',
+        ]
       },
       {
         title: 'Non-Resident',
@@ -149,7 +207,32 @@ const blog_data = [
           'Does not have a fixed place of business or residence in India.',
           'Foreign companies supplying goods or services in India.',
         ],
+        features: [
+
+        ]
       },
+    ],
+    key_differences_types: [
+      {
+        title: 'Turnover Limit',
+        description: ': Regular registration mandatory above specified limits, composition scheme up to limits.'
+      },
+      {
+        title: 'Compliance Complexity',
+        description: 'Regular requires detailed records, composition offers simpler procedures.'
+      },
+      {
+        title: 'Tax payment',
+        description: 'Regular taxes value added, composition pays fixed %age of turnover.'
+      },
+      {
+        title: 'Input tax credit',
+        description: "Regular allows ITC claims, composition doesn't."
+      },
+      {
+        title: 'Suitability',
+        description: 'Regular for larger businesses, composition for small businesses.'
+      }
     ],
     notes: [
       {
@@ -311,10 +394,13 @@ const GSTRegistration = () => {
               <h1 className='text-4xl font-bold mb-4'>{data.title}</h1>
               <p className='text-lg'>{data.intro}</p>
             </div>
-            <RequiredDocuments2 documents={data.documents} id='req-documents' />
             <LicenseTypes license={data.types} />
+            <KeyDifferences differences={data.key_differences_types} />
+            <NonEligible nonEligible={data.nonEligible} />
+            <RequiredDocuments2 documents={data.documents} id='req-documents' />
             <PriceTable priceTableData={data.price_2col} id='price-table' />
             <RenewalCard renewal={data.renewal} id='renewal' />
+            <Benefits benefits={data.benefits} />
             <div className='col-span-4' id='faq'>
               <h2 className='col-span-4 font-bold text-3xl mt-10'>FAQ</h2>
               <Accordion faq={data.faq} />

@@ -36,8 +36,8 @@ const Navbar = () => {
   }
 
   return (
-    <div className='relative z-30'>
-      <Contact />
+    <div className='relative z-30 top-0 fixed'>
+      {/* <Contact /> */}
       <div
         className={`w-full border-b border-gray-500/50 bg-[#3d3d49] shadow-[0px_21px_25px_-19px_rgba(0,0,0,0.45)] text-white md:top-9 lg:top-10`}
       >
