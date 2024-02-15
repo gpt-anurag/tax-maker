@@ -35,8 +35,8 @@ const AboutPage = () => {
             we have the expertise and resources to ensure your success.
           </p> */}
           <p>
-            Join us at Tax Maker and experience the difference. Let's make tax
-            savvy your key to success!
+            {`Join us at Tax Maker and experience the difference. Let's make tax
+            savvy your key to success!`}
           </p>
         </div>
         <div className='col-span-4'>
