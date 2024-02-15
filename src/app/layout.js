@@ -1,5 +1,4 @@
-'use client'
-import { usePathname } from 'next/navigation'
+import NavbarTesting from './components/NavbarTesting'
 import Navbar from './components/Navbar'
 import './globals.css'
 import { Inter, Nunito, Poppins } from 'next/font/google'
@@ -21,12 +20,11 @@ export const metadata = {
 }
 
 export default function RootLayout({ children }) {
-  const pathname = usePathname()
   return (
     <html lang='en' className='scroll-smooth'>
       {/* <body className={inter.className}>{children}</body> */}
       <body className={nunito.className}>
-        <div className='relative'>{pathname !== '/' && <Navbar />}</div>
+        <NavbarTesting />
 
         {children}
         <Footer />
