@@ -52,15 +52,14 @@ const Services = () => {
             <div>
               <div className="mb-2 flex items-center gap-4 font-semibold">
                 {/* <BsDisplay className="text-5xl" /> */}
-                {/* <Image
-                  src={'/tax-icons/experience.png'}
-                  alt={'why choose us'}
-                  width={24}
-                  height={24}
-                  quality={100}
-                  className='w-[48px] h-[48px] mr-3 self-center object-cover
-                /> */}
-                <img src='/tax-icons/satisfaction.png' alt='satisfaction' className='w-[70px] h-[70px]' />
+                <Image
+                  src={'/tax-icons/satisfaction.png'}
+                  alt={'satisfaction'}
+                  width={70}
+                  height={70}
+                  quality={50}
+                  className='w-[70px] h-[70px] mr-1 self-center object-cover'
+                />
                 <p className="text-[1.55rem]">5+ years of experience</p>
               </div>
               <p className="text-black font-bold text-center text-lg text-[1.2rem]">
@@ -71,7 +70,14 @@ const Services = () => {
             <div>
               <div className="mb-2 flex items-center gap-4">
                 {/* <BsDisplay className="shrink-0 text-5xl" />       */}
-                <img src='/tax-icons/experience.png' alt='experience' className='w-[70px] h-[70px]' />
+                <Image
+                  src={'/tax-icons/experience.png'}
+                  alt={'experience'}
+                  width={70}
+                  height={70}
+                  quality={50}
+                  className='w-[70px] h-[70px] mr-1 self-center object-cover'
+                />
                 <p className="text-[1.55rem]">Expert guidance</p>
               </div>
               <p className="text-black font-bold  text-center text-lg text-[1.2rem]">
@@ -82,7 +88,14 @@ const Services = () => {
             <div>
               <div className="mb-2 flex items-center gap-4 font-semibold text-FontDark ">
                 {/* <BsDisplay className="text-5xl" /> */}
-                <img src='/tax-icons/sunbathing.png' alt='sunbathing' className='w-[70px] h-[70px]' />
+                <Image
+                  src={'/tax-icons/sunbathing.png'}
+                  alt={'sunbathing'}
+                  width={70}
+                  height={70}
+                  quality={50}
+                  className='w-[70px] h-[70px] mr-1 self-center object-cover'
+                />
                 <p className="text-[1.55rem]">Stress-free process</p>
               </div>
               <p className="text-black font-bold  text-center text-lg text-[1.2rem]">
@@ -92,7 +105,14 @@ const Services = () => {
             <div>
               <div className="mb-2 flex items-center gap-4 font-semibold text-FontDark ">
                 {/* <BsDisplay className="text-5xl" /> */}
-                <img src='/tax-icons/rupees.png' alt='rupees' className='w-[70px] h-[70px]' />
+                <Image
+                  src={'/tax-icons/rupees.png'}
+                  alt={'rupees  '}
+                  width={70}
+                  height={70}
+                  quality={50}
+                  className='w-[70px] h-[70px] mr-1 self-center object-cover'
+                />
                 <p className="text-[1.55rem]">Affordable rates</p>
               </div>
               <p className="text-black font-bold  text-center text-lg text-[1.2rem]">
