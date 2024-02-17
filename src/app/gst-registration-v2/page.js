@@ -22,8 +22,7 @@ const blog_data = [
     title: 'GST Registration',
     intro:
       'Goods and Services Tax (GST) is a pivotal taxation system in India, unifying various indirect taxes under a single umbrella. Obtaining a GST registration certificate is a fundamental step for businesses to comply with the law. In this guide, we will delve into key aspects of GST registration, providing valuable insights and addressing specific queries related to the process.',
-    headline:
-      'Don’t Let GST Confuse You: Get Expert Guidance and Support from GST Registration Services',
+    headline: `Don’t Let GST Confuse You <br><span style="color:black">Get Expert Guidance and Support from GST Registration Services</span>`,
     catchyIntro: `Imagine a world where taxes weren't a burden, but a <b>gateway to
       growth</b> and unlocking new opportunities. That's the power of GST
       registration, and in this post, we'll be your sensible guide,
@@ -42,16 +41,19 @@ const blog_data = [
     nonEligible: [
       {
         title: 'Agriculturalists',
-        description: "Engaged in agricultural activities, provided their annual turnover doesn't exceed Rs. 20 lakhs.",
+        description:
+          "Engaged in agricultural activities, provided their annual turnover doesn't exceed Rs. 20 lakhs.",
       },
       {
         title: 'Small businesses',
-        description : 'Operating within a single state and not crossing the specified turnover limits for goods or services'
+        description:
+          'Operating within a single state and not crossing the specified turnover limits for goods or services',
       },
       {
         title: 'Individuals',
-        description: 'Supplying goods or services without a business structure and not operating as a business entity.'
-      }
+        description:
+          'Supplying goods or services without a business structure and not operating as a business entity.',
+      },
     ],
     documents: [
       {
@@ -97,29 +99,34 @@ const blog_data = [
       },
       {
         title: 'Increased Sales and Revenue',
-        description: 'GST registration allows you to claim ITC(Income Tax Credit) on taxes paid on your purchases. This reduces your overall tax burden, making your products and services more competitive and potentially leading to increased sales and revenue'
+        description:
+          'GST registration allows you to claim ITC(Income Tax Credit) on taxes paid on your purchases. This reduces your overall tax burden, making your products and services more competitive and potentially leading to increased sales and revenue',
       },
       {
         title: 'Improved Access to Markets',
-        description: 'Many government agencies and departments mandate GST registration for suppliers. Registering opens doors to these lucrative contracts and tenders, expanding your market reach'
+        description:
+          'Many government agencies and departments mandate GST registration for suppliers. Registering opens doors to these lucrative contracts and tenders, expanding your market reach',
       },
       {
         title: 'Enhanced Brand Image',
-        description: "A GST registration certificate signifies your business's legitimacy and compliance with tax regulations. This fosters trust and credibility among customers and suppliers, enhancing your brand image"
+        description:
+          "A GST registration certificate signifies your business's legitimacy and compliance with tax regulations. This fosters trust and credibility among customers and suppliers, enhancing your brand image",
       },
       {
         title: 'Simplified Compliance',
-        description: "GST replaces a multitude of cascading taxes with a single unified tax as 'One Nation, One Tax', simplifying compliance and reducing paperwork. This saves time and resources, allowing you to focus on core business activities"
+        description:
+          "GST replaces a multitude of cascading taxes with a single unified tax as 'One Nation, One Tax', simplifying compliance and reducing paperwork. This saves time and resources, allowing you to focus on core business activities",
       },
       {
         title: 'Transparency and Efficiency',
-        description: 'GST registration and filing are done entirely online through the GST portal, ensuring transparency and efficiency. Real-time data tracking minimizes errors and facilitates faster refunds'
+        description:
+          'GST registration and filing are done entirely online through the GST portal, ensuring transparency and efficiency. Real-time data tracking minimizes errors and facilitates faster refunds',
       },
       {
         title: 'Access to Special Schemes',
-        description: 'Small businesses with a turnover below Rs. 1.5 crore can opt for the composition scheme, offering simplified tax compliance and lower tax rates'
-      }
-
+        description:
+          'Small businesses with a turnover below Rs. 1.5 crore can opt for the composition scheme, offering simplified tax compliance and lower tax rates',
+      },
     ],
     renewal: [
       `Telangana Department of Labour offers online renewal for most licenses through their
@@ -185,7 +192,7 @@ const blog_data = [
           'Pay tax on the value added at each stage of the supply chain.',
           'Claim input tax credit (ITC) on taxes paid on purchases, reducing the overall tax burden.',
           'Suitable for larger businesses with complex transactions and significant ITC claims.',
-        ]
+        ],
       },
       {
         title: 'Composition',
@@ -199,7 +206,7 @@ const blog_data = [
           'Pay a fixed percentage of turnover as tax (no separate tax on value added).',
           'Cannot claim ITC on purchases.',
           'Suitable for small businesses with low turnover and simpler transactions.',
-        ]
+        ],
       },
       {
         title: 'Non-Resident',
@@ -207,38 +214,74 @@ const blog_data = [
           'Does not have a fixed place of business or residence in India.',
           'Foreign companies supplying goods or services in India.',
         ],
-        features: [
-
-        ]
+        features: [],
       },
     ],
     key_differences_types: [
       {
         title: 'Turnover Limit',
-        description: ': Regular registration mandatory above specified limits, composition scheme up to limits.'
+        description:
+          ': Regular registration mandatory above specified limits, composition scheme up to limits.',
       },
       {
         title: 'Compliance Complexity',
-        description: 'Regular requires detailed records, composition offers simpler procedures.'
+        description:
+          'Regular requires detailed records, composition offers simpler procedures.',
       },
       {
         title: 'Tax payment',
-        description: 'Regular taxes value added, composition pays fixed %age of turnover.'
+        description:
+          'Regular taxes value added, composition pays fixed %age of turnover.',
       },
       {
         title: 'Input tax credit',
-        description: "Regular allows ITC claims, composition doesn't."
+        description: "Regular allows ITC claims, composition doesn't.",
       },
       {
         title: 'Suitability',
-        description: 'Regular for larger businesses, composition for small businesses.'
-      }
+        description:
+          'Regular for larger businesses, composition for small businesses.',
+      },
     ],
     notes: [
       {
         title: '',
         description: '',
       },
+    ],
+    procedure: [
+      `<pre>Visit the GST Portal: Go to the official GST portal (https://www.gst.gov.in/).
+      Initiate Registration: Click on "Services" > "Registration" > "New Registration".
+      Complete Part A:
+      Select "New Registration" and your taxpayer type (e.g., regular business, casual taxable person).
+      Enter your PAN, state, legal business name, email address, and mobile number.
+      Verify using OTPs sent to your email and mobile number.
+      You'll receive a Temporary Reference Number (TRN).
+      Complete Part B:
+      Log in again using the TRN.
+      Fill in 10 sections providing:
+      Business details
+      Details of promoters/partners
+      Details of authorized signatories
+      Details of the principal place of business
+      Details of additional business locations
+      Goods and services details
+      Bank account details
+      Verification
+      Upload required documents (scanned copies).
+      Submit Application:
+      Sign the application using a DSC or E-Signature (via Aadhaar-linked OTP).
+      You'll receive an Application Reference Number (ARN) for tracking.
+      Verification and Approval
+      
+      The GST department will process your application.
+      Upon successful verification, you'll receive your GST Identification Number (GSTIN) via email and SMS.
+      You can access your GSTIN on the GST portal.
+      Important Notes:
+      
+      The GST registration process is entirely online.
+      The processing time may vary depending on the completeness and accuracy of your application.
+      Consider consulting a tax professional for complex registration scenarios.</pre>`,
     ],
   },
   {
@@ -324,9 +367,9 @@ const GSTRegistration = () => {
   return (
     <>
       <SectionContainer>
-        <div className='grid grid-cols-5'>
+        <div className='grid grid-cols-5 bg-[#fdfeff]'>
           <aside className='col-span-1 mr-10 pt-10 hidden basis-1/5 border-r-2 md:block'>
-            <ul className='sticky top-0 flex flex-col pt-4 text-lg font-medium divide-y'>
+            <ul className='sticky flex flex-col pt-4 text-lg font-medium divide-y top-1/2 -translate-y-1/2'>
               <li className='py-2 '>
                 <Link
                   href='#intro'
@@ -374,8 +417,11 @@ const GSTRegistration = () => {
             className='col-span-4 grid grid-cols-4 gap-4 items-center pt-20 pb-8 border-b-2'
             id='intro'
           >
-            <h1 className='font-hanumanFont font-bold col-span-5 text-3xl'>
-              {data.headline}
+            <h1
+              className='font-hanumanFont font-bold col-span-5 text-3xl text-bgPrimary100'
+              dangerouslySetInnerHTML={{ __html: data.headline }}
+            >
+              {/* {data.headline} */}
             </h1>
             <p
               className='col-span-5 text-xl mb-10'
@@ -406,6 +452,10 @@ const GSTRegistration = () => {
               <Accordion faq={data.faq} />
             </div>
           </div>
+          {/* <div
+            className='col-span-4'
+            dangerouslySetInnerHTML={{ __html: data.procedure }}
+          ></div> */}
         </div>
       </SectionContainer>
     </>

@@ -1,14 +1,15 @@
-import { BsDisplay } from "react-icons/bs";
-import SectionContainer from "./SectionContainer";
-import Link from "next/link";
-import Image from "next/image";
+import { BsDisplay } from 'react-icons/bs'
+import SectionContainer from './SectionContainer'
+import Link from 'next/link'
+import Image from 'next/image'
 
 const Services = () => {
   return (
-    <section className="py-16 bg-gradient-to-b from-[#14322e] to-[#2c5e4a]">
+    // <section className='py-16 bg-gradient-to-b from-[#2ac3f4] to-[#fff]'>
+    <section className='py-4  bg-[#0f1136]'>
       <SectionContainer>
-        <div className="flex flex-col md:flex-row text-black font-bold text-justify text-lg">
-        <div className="md:relative md:basis-4/12 ">
+        <div className='flex flex-col md:flex-row text-white font-bold text-justify text-lg'>
+          <div className='md:relative md:basis-4/12 '>
             {/* <div className="bottom-24 w-full rounded-xl p-8 shadow-xl md:absolute md:bg-white">
               <h2 className="mb-4 text-4xl font-semibold">What we do?</h2>
               <ul className="mb-3 font-semibold text-primary100 ">
@@ -36,21 +37,21 @@ const Services = () => {
               </Link>
             </div> */}
             {/* <h1> */}
-              <Image
-              src={'/tax-icons/why_choose.jpg'}
+            <Image
+              src={'/why-choose-2.jpg'}
               alt={'why choose us'}
               // width={700}
               // height={700}
               fill
-              objectFit="cover"
+              objectFit='cover'
               // style={{objectFit: "contain"}}
-              className='w-full h-full mr-3 self-center object-cover scale-101'
+              className='w-full h-full mr-3 self-center bg-center object-left object-cover scale-101 rounded'
             />
             {/* </h1> */}
           </div>
-          <div className="grid grid-cols-2 grid-rows-2 gap-x-16 gap-y-6 p-8 md:basis-8/12">
+          <div className='grid grid-cols-2 grid-rows-2 gap-x-16 gap-y-6 p-8 md:basis-8/12'>
             <div>
-              <div className="mb-2 flex items-center gap-4 font-semibold">
+              <div className='mb-2 flex items-center gap-4 font-semibold'>
                 {/* <BsDisplay className="text-5xl" /> */}
                 <Image
                   src={'/tax-icons/satisfaction.png'}
@@ -60,15 +61,16 @@ const Services = () => {
                   quality={50}
                   className='w-[70px] h-[70px] mr-1 self-center object-cover'
                 />
-                <p className="text-[1.55rem]">5+ years of experience</p>
+                <p className='text-[1.55rem]'>5+ years of experience</p>
               </div>
-              <p className="text-black font-bold text-center text-lg text-[1.2rem]">
-                We have a proven track record of success in helping businesses get started
+              <p className=' font-bold text-center text-lg text-[1.2rem]'>
+                We have a proven track record of success in helping businesses
+                get started
               </p>
             </div>
 
             <div>
-              <div className="mb-2 flex items-center gap-4">
+              <div className='mb-2 flex items-center gap-4'>
                 {/* <BsDisplay className="shrink-0 text-5xl" />       */}
                 <Image
                   src={'/tax-icons/experience.png'}
@@ -78,15 +80,16 @@ const Services = () => {
                   quality={50}
                   className='w-[70px] h-[70px] mr-1 self-center object-cover'
                 />
-                <p className="text-[1.55rem]">Expert guidance</p>
+                <p className='text-[1.55rem]'>Expert guidance</p>
               </div>
-              <p className="text-black font-bold  text-center text-lg text-[1.2rem]">
-                Our team of experienced professionals understands the intricacies of business registration and licenses in Hyderabad
+              <p className=' font-bold  text-center text-lg text-[1.2rem]'>
+                Our team of experienced professionals understands the
+                intricacies of business registration and licenses in Hyderabad
               </p>
             </div>
 
             <div>
-              <div className="mb-2 flex items-center gap-4 font-semibold text-FontDark ">
+              <div className='mb-2 flex items-center gap-4 font-semibold '>
                 {/* <BsDisplay className="text-5xl" /> */}
                 <Image
                   src={'/tax-icons/sunbathing.png'}
@@ -96,14 +99,15 @@ const Services = () => {
                   quality={50}
                   className='w-[70px] h-[70px] mr-1 self-center object-cover'
                 />
-                <p className="text-[1.55rem]">Stress-free process</p>
+                <p className='text-[1.55rem]'>Stress-free process</p>
               </div>
-              <p className="text-black font-bold  text-center text-lg text-[1.2rem]">
-              We take care of all the paperwork and formalities, freeing you up to focus on your business
+              <p className=' font-bold  text-center text-lg text-[1.2rem]'>
+                We take care of all the paperwork and formalities, freeing you
+                up to focus on your business
               </p>
             </div>
             <div>
-              <div className="mb-2 flex items-center gap-4 font-semibold text-FontDark ">
+              <div className='mb-2 flex items-center gap-4 font-semibold '>
                 {/* <BsDisplay className="text-5xl" /> */}
                 <Image
                   src={'/tax-icons/rupees.png'}
@@ -113,18 +117,18 @@ const Services = () => {
                   quality={50}
                   className='w-[70px] h-[70px] mr-1 self-center object-cover'
                 />
-                <p className="text-[1.55rem]">Affordable rates</p>
+                <p className='text-[1.55rem]'>Affordable</p>
               </div>
-              <p className="text-black font-bold  text-center text-lg text-[1.2rem]">
-              We offer competitive rates to make our services accessible to all entrepreneurs
+              <p className=' font-bold  text-center text-lg text-[1.2rem]'>
+                We offer competitive rates to make our services accessible to
+                all entrepreneurs
               </p>
             </div>
           </div>
-          
         </div>
       </SectionContainer>
     </section>
-  );
-};
+  )
+}
 
-export default Services;
+export default Services

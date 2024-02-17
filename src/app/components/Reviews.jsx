@@ -5,6 +5,7 @@ import SectionContainer from './SectionContainer'
 import Carousel from 'nuka-carousel'
 import { GrFormNext, GrFormPrevious } from 'react-icons/gr'
 import { params } from './Header'
+import ReviewCard from './ReviewCard'
 
 const Reviews = () => {
   return (
@@ -20,12 +21,9 @@ const Reviews = () => {
         </div>
 
         <div className=''>
-          <Carousel
-            {...params}
-            autoplay
-          >
+          <Carousel {...params}>
             {/* <!--First Testimonial--> */}
-            <div className='text-center max-w-max mx-auto'>
+            {/* <div className='text-center max-w-max mx-auto'>
               <div className='block rounded-lg bg-white shadow-lg '>
                 <div className='h-28 overflow-hidden rounded-t-lg bg-[#9d789b]'></div>
                 <div className='mx-auto -mt-12 w-24 overflow-hidden rounded-full border-2 border-white bg-white'>
@@ -48,7 +46,8 @@ const Reviews = () => {
                   </p>
                 </div>
               </div>
-            </div>
+            </div> */}
+            <ReviewCard />
 
             {/* <!--Second Testimonial--> */}
             <div className='text-center max-w-max mx-auto'>

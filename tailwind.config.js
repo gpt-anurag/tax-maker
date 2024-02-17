@@ -17,6 +17,7 @@ module.exports = {
         FontDark: '#06163a',
         FontDark200: '#2b2e51',
         FontHover: '#d4d3d2',
+        bgPrimary100: '#2bc5f5',
       },
       transitionProperty: {
         all: 'all', // Enable transitions for all properties
