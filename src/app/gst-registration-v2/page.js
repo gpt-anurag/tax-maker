@@ -22,7 +22,7 @@ const blog_data = [
     title: 'GST Registration',
     intro:
       'Goods and Services Tax (GST) is a pivotal taxation system in India, unifying various indirect taxes under a single umbrella. Obtaining a GST registration certificate is a fundamental step for businesses to comply with the law. In this guide, we will delve into key aspects of GST registration, providing valuable insights and addressing specific queries related to the process.',
-    headline: `Don’t Let GST Confuse You <br><span style="color:black">Get Expert Guidance and Support from GST Registration Services</span>`,
+    headline: `Don’t Let GST Confuse You <br><span style="color:black">Get Expert Guidance and Support from GST Registration Onlinef</span>`,
     catchyIntro: `Imagine a world where taxes weren't a burden, but a <b>gateway to
       growth</b> and unlocking new opportunities. That's the power of GST
       registration, and in this post, we'll be your sensible guide,

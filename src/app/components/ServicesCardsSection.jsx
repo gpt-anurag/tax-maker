@@ -18,7 +18,9 @@ const ServicesCardsSection = () => {
               alt='Sunset in the mountains'
             />
             <div className='mt-4 px-6 py-4 text-center'>
-              <div className='font-bold text-2xl mb-2'>GST Registration</div>
+              <div className='font-bold text-2xl mb-2'>
+                GST Registration Types
+              </div>
             </div>
           </div>
           <div className='max-w-sm overflow-hidden cursor-pointer'>

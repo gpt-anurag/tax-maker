@@ -47,7 +47,17 @@ const Reviews = () => {
                 </div>
               </div>
             </div> */}
-            <ReviewCard />
+            <ReviewCard
+              imageUrl='https://tecdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp'
+              userReview={{
+                name: 'Harriet Mitchell',
+                title: 'Marketing Director',
+                review: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus at
+            sit distinctio. Reiciendis rerum aliquid, quam eos illo recusandae
+            porro unde, temporibus at harum numquam mollitia? Culpa mollitia eos
+            ab.`,
+              }}
+            />
 
             {/* <!--Second Testimonial--> */}
             <div className='text-center max-w-max mx-auto'>
