@@ -15,6 +15,7 @@ import LicenseTypes from '../components/LicenseTypes'
 import KeyDifferences from '../components/KeyDifferences'
 import NonEligible from '../components/NonEligible'
 import Benefits from '../components/Benefits'
+import CallToAction from '../components/CallToAction'
 
 const blog_data = [
   {
@@ -447,6 +448,7 @@ const GSTRegistration = () => {
             <PriceTable priceTableData={data.price_2col} id='price-table' />
             <RenewalCard renewal={data.renewal} id='renewal' />
             <Benefits benefits={data.benefits} />
+            <CallToAction />
             <div className='col-span-4' id='faq'>
               <h2 className='col-span-4 font-bold text-3xl mt-10'>FAQ</h2>
               <Accordion faq={data.faq} />
